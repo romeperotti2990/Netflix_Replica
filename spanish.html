@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col bg-black text-white min-h-screen" style="background-image: url(Images/background.jpg);">
+
+    <!-- Top Nav -->
+    <nav class="w-full h-20 flex justify-between items-center p-4 px-7 mt-4">
+        <img src="Images/logo.png" class="h-full object-contain">
+        <div class="flex items-center gap-4 text-white">
+            <select
+                class=" border border-white px-6 py-2 rounded appearance-none text-center hover:bg-white hover:text-black cursor-pointer"
+                onchange="window.location.href = this.value">
+                <option value="spanish.html">Español</option>
+                <option value="index.html">English</option>
+            </select>
+            <a href="https://www.netflix.com/login" class="bg-red-600 px-4 py-2 rounded cursor-pointer">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="flex flex-col items-center justify-center px-4 text-center grow mb-20 font-bold">
+        <h1 class="text-3xl md:text-5xl  mb-4">
+            Películas, series y mucho más sin límites.
+        </h1>
+        <p class="text-lg md:text-xl mb-5">
+            Mira donde quieras. Cancela cuando quieras.
+        </p>
+        <p class="text-md md:text-lg mb-6">
+            ¿Listo para ver? Ingresa tu correo para crear o reiniciar tu membresía.
+        </p>
+
+        <!-- Email form -->
+        <form class="w-full max-w-md flex flex-col sm:flex-row">
+            <input type="email" placeholder="Dirección de correo electrónico"
+                class="flex-1 px-4 py-3 rounded-t sm:rounded-t-none sm:rounded-l bg-white text-black placeholder-gray-500 focus:outline-none" />
+            <button type="submit"
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-b sm:rounded-bl-none sm:rounded-r cursor-pointer">
+                Comenzar
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>

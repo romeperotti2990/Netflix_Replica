@@ -13,11 +13,13 @@
   <nav class="w-full h-20 flex justify-between items-center p-4 px-7 mt-4">
     <img src="Images/logo.png" class="h-full object-contain">
     <div class="flex items-center gap-4 text-white">
-      <select class=" border border-white px-6 py-2 rounded appearance-none text-center hover:bg-white hover:text-black cursor-pointer">
-        <option>English</option>
-        <option>Español</option>
+      <select
+        class=" border border-white px-6 py-2 rounded appearance-none text-center hover:bg-white hover:text-black cursor-pointer"
+        onchange="window.location.href = this.value">
+        <option value="index.html">English</option>
+        <option value="spanish.html">Español</option>
       </select>
-      <button class="bg-red-600 px-4 py-2 rounded cursor-pointer">Sign In</button>
+      <a href="https://www.netflix.com/login" class="bg-red-600 px-4 py-2 rounded cursor-pointer">Sign In</a>
     </div>
   </nav>
 
@@ -37,7 +39,8 @@
     <form class="w-full max-w-md flex flex-col sm:flex-row">
       <input type="email" placeholder="Email address"
         class="flex-1 px-4 py-3 rounded-t sm:rounded-t-none sm:rounded-l bg-white text-black placeholder-gray-500 focus:outline-none" />
-      <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-b sm:rounded-bl-none sm:rounded-r cursor-pointer">
+      <button type="submit"
+        class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-b sm:rounded-bl-none sm:rounded-r cursor-pointer">
         Get Started
       </button>
     </form>
